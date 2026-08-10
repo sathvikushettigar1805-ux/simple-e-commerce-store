@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - ShopEasy</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛍️ ShopEasy
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#products">
+                Products
+            </a>
+
+            <a href="cart.html">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Cart -->
+
+    <main class="cart-page">
+
+        <h1>
+            Shopping Cart
+        </h1>
+
+
+        <div class="cart-layout">
+
+
+            <!-- Cart Products -->
+
+            <div
+                id="cart-items"
+                class="cart-items"
+            >
+
+                <p class="loading">
+                    Loading cart...
+                </p>
+
+            </div>
+
+
+            <!-- Cart Summary -->
+
+            <div class="cart-summary">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Items
+                    </span>
+
+                    <span id="summary-items">
+                        0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="cart-total">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    id="checkout-btn"
+                    class="checkout-btn"
+                    onclick="proceedToCheckout()"
+                >
+                    Proceed to Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 ShopEasy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

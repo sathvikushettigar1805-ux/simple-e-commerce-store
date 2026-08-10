@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details - ShopEasy</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛍️ ShopEasy
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#products">
+                Products
+            </a>
+
+            <a href="cart.html">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Product Details -->
+
+    <main class="product-details-page">
+
+        <div id="product-details">
+
+            <p class="loading">
+                Loading product...
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 ShopEasy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/product.js"></script>
+
+    <!-- Custom Success Modal -->
+<div id="success-modal" class="success-modal">
+    <div class="success-modal-content">
+        
+        <div class="success-icon">✓</div>
+
+        <h3>Product Added!</h3>
+
+        <p>Product added to cart successfully.</p>
+
+        <button id="success-ok-btn">
+            OK
+        </button>
+
+    </div>
+</div>
+
+</body>
+
+</html>

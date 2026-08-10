@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - ShopEasy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ShopEasy</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+
+    <main class="checkout-container">
+
+        <h2>Checkout</h2>
+
+        <div id="orderSummary"></div>
+
+        <form id="checkoutForm">
+
+            <h3>Shipping Information</h3>
+
+            <label for="address">
+                Delivery Address
+            </label>
+
+            <textarea
+                id="address"
+                placeholder="Enter your full address"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </main>
+
+
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Simple E-Commerce Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            🛍️ ShopEasy
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="cart.html">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to ShopEasy</h1>
+
+            <p>
+                Find great products at affordable prices.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+
+        <h2>Our Products</h2>
+
+        <p class="section-description">
+            Explore our latest products
+        </p>
+
+        <!-- Products will be loaded here -->
+        <div id="product-container" class="product-grid">
+
+            <p class="loading">
+                Loading products...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ShopEasy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+    <!-- Custom Success Modal -->
+<div id="success-modal" class="success-modal">
+    <div class="success-modal-content">
+        
+        <div class="success-icon">✓</div>
+
+        <h3>Product Added!</h3>
+
+        <p>Product added to cart successfully.</p>
+
+        <button id="success-ok-btn">
+            OK
+        </button>
+
+    </div>
+</div>
+
+</body>
+</html>
