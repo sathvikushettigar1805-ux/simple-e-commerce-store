@@ -221,9 +221,7 @@ function addProductToCart(productId) {
     updateCartCount();
 
 
-    alert(
-        "Product added to cart!"
-    );
+    showSuccessMessage();
 
 }
 
@@ -260,6 +258,41 @@ function updateCartCount() {
             totalItems;
 
     }
+
+}
+
+// ========================================
+// SUCCESS POPUP
+// ========================================
+
+function showSuccessMessage() {
+
+    const modal =
+        document.getElementById(
+            "success-modal"
+        );
+
+    const okButton =
+        document.getElementById(
+            "success-ok-btn"
+        );
+
+
+    if (!modal || !okButton) {
+
+        return;
+
+    }
+
+
+    modal.style.display = "flex";
+
+
+    okButton.onclick = function () {
+
+        modal.style.display = "none";
+
+    };
 
 }
 
